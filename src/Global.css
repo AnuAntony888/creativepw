@@ -1,0 +1,53 @@
+.button1{
+  /* linear-gradient(to right,#f9897d 0%,#fd5f87 100%); */
+    border-radius: 3px !important;
+    padding: 14px 40px !important;
+    color: white !important;
+    background: linear-gradient(to right,#f9897d 0%,#fd5f87 100%) !important;
+}
+.line_color{
+  border-top: 1px solid lightgray  !important;
+}
+
+.circle_small{
+  animation: mymove 5s infinite;
+}
+@keyframes mymove {
+  0% {transform: rotate(360deg);}
+}
+
+.bannan{
+  animation: moveLeftRight 5s ease-in-out infinite;
+}
+@keyframes moveLeftRight {
+  0% {
+    transform: rotate(-1deg); /* Start position */
+  }
+
+  50% {
+    transform: rotate(1deg); /* Move 45% to the right */
+  }
+  100% {
+    transform: rotate(-1deg); /* Start position */
+  }
+}
+
+.css-u3xfqn-MuiSlider-root{padding: 10px !important;}
+
+.css-14gf62f-MuiSlider-thumb ,.css-eg0mwd-MuiSlider-thumb {width: 0;}
+
+
+
+
+em {
+  font-style: normal !important;
+}
+.buttton_eader{
+background-color: transparent !important;
+  
+    }
+
+    .buttton_eader:active , .buttton_eader:hover{
+      background-color: transparent !important;
+    }
+
