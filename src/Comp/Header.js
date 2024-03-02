@@ -10,7 +10,7 @@ import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 import ResponsiveHeader from "./ResponsiveHeader";
-
+import Log from '../Assets/log.png'
 import MenuItem from "@mui/material/MenuItem";
 
 import Menu from "@mui/material/Menu";
@@ -42,7 +42,7 @@ export default function Header() {
       <Box
         sx={{
           flexGrow: 1,
-          marginBottom: "60px",
+          marginBottom: "80px",
         }}
       >
         <AppBar
@@ -61,9 +61,9 @@ export default function Header() {
           <Toolbar sx={{ justifyContent: "space-between" }}>
             {matches ? (
               <>
-                <div data-aos="fade-up" data-aos-duration="1000">
+                <div data-aos="zoom-in" data-aos-duration="1000">
                   <img
-                    src={""}
+                    src={Log}
                     width={120}
                     height={"auto"}
                     onClick={refreshPage}
@@ -150,7 +150,7 @@ export default function Header() {
             ) : (
               <>
                 <img
-                  src={""}
+                  src={Log}
                   width={130}
                   height={"auto"}
                   onClick={refreshPage}
