@@ -1,4 +1,4 @@
-import { Box, Card, CardContent, Grid } from "@mui/material";
+import { Box, Card, CardContent, CardMedia, Grid } from "@mui/material";
 import React from "react";
 import { Buttons, TypographyText } from "../ReusableComponent/Reusab";
 import { useTheme } from "@mui/material/styles";
@@ -155,7 +155,7 @@ const Home3 = () => {
                         },
                       }}
                     >
-                      <LazyLoadImage
+                      {/* <LazyLoadImage
                         component="img"
                         src={post.img}
                         style={{
@@ -166,7 +166,17 @@ const Home3 = () => {
                           display:'block'
                         }}
                         alt={post.name}
-                      />
+                      /> */}
+                      <CardMedia     component="img"
+                        src={post.img}
+                        sx={{
+                          margin: "auto",
+                          width: "100%",
+                          objectFit: "contain",
+                          borderRadius: "20px",
+                          display:'block'
+                        }}
+                        alt={post.name}/>
                       <Box
                         className="image_sub_card"
                         sx={{
