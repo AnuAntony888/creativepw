@@ -163,6 +163,7 @@ const Home3 = () => {
                           width: "100%",
                           objectFit: "contain",
                           borderRadius: "20px",
+                          display:'block'
                         }}
                         alt={post.name}
                       />
