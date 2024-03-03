@@ -1,57 +1,40 @@
-.button1{
+.button1 {
   /* linear-gradient(to right,#f9897d 0%,#fd5f87 100%); */
-    border-radius: 3px !important;
-    padding: 8px 30px !important;
-    color:white !important;
-    background-color: lightpink;
-
-
-
-
-}
-.line_color{
-  border-top: 1px solid lightgray  !important;
+  border-radius: 3px !important;
+  padding: 8px 30px !important;
+  color: white !important;
+  background-color: lightpink;
 }
 
-.circle_small{
-  animation: mymove 5s infinite;
+.slick-slide > div {
+  margin: 0 8px;
 }
-@keyframes mymove {
-  0% {transform: rotate(360deg);}
-}
-
-.bannan{
-  animation: moveLeftRight 5s ease-in-out infinite;
-}
-@keyframes moveLeftRight {
-  0% {
-    transform: rotate(-1deg); /* Start position */
-  }
-
-  50% {
-    transform: rotate(1deg); /* Move 45% to the right */
-  }
-  100% {
-    transform: rotate(-1deg); /* Start position */
-  }
+.slick-list {
+  margin: 0 -8px;
 }
 
-.css-u3xfqn-MuiSlider-root{padding: 10px !important;}
+.slickbuttonprev {
+  left: -25px !important;
 
-.css-14gf62f-MuiSlider-thumb ,.css-eg0mwd-MuiSlider-thumb {width: 0;}
-
-
-
-
-em {
-  font-style: normal !important;
+  top: 40% !important;
+  z-index: 1000 !important;
+  position: absolute !important;
+  margin: auto;
+  border-radius: 50% !important;
+  background-color: transparent !important;
+  display: block;
+  position: absolute;
 }
-.buttton_eader{
-background-color: transparent !important;
-  
-    }
 
-    .buttton_eader:active , .buttton_eader:hover{
-      background-color: transparent !important;
-    }
+.slickbuttonnext {
+  display: block;
+  position: absolute;
+  right: -25px !important;
+  top: 40% !important;
+  z-index: 1000 !important;
+  position: absolute;
 
+  margin: auto;
+  border-radius: 50% !important;
+  background-color: transparent !important;
+}

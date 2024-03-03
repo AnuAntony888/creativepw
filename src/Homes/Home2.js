@@ -153,7 +153,7 @@ const Home2 = () => {
           ></hr>
         </Grid>
         {Service.map((data, index) => (
-          <Grid item lg={4} md={6} sm={12} xs={12}>
+          <Grid item lg={4} md={6} sm={6} xs={12}>
           <div data-aos="flip-left"
      data-aos-easing="ease-out-cubic"
      data-aos-duration="500">

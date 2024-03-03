@@ -10,7 +10,7 @@ import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 import ResponsiveHeader from "./ResponsiveHeader";
-import Log from '../Assets/log.png'
+import Log from "../Assets/log.png";
 import MenuItem from "@mui/material/MenuItem";
 
 import Menu from "@mui/material/Menu";
@@ -58,7 +58,12 @@ export default function Header() {
           }}
           position="fixed"
         >
-          <Toolbar sx={{ justifyContent: "space-between" }}>
+          <Toolbar
+            sx={{
+              justifyContent: "space-between",
+              marginTop: !matches ? "5px" : "",
+            }}
+          >
             {matches ? (
               <>
                 <div data-aos="zoom-in" data-aos-duration="1000">
@@ -99,7 +104,7 @@ export default function Header() {
                         onClick={handleClick}
                         sx={{
                           color: "#1E1666",
-                  
+
                           fontFamily: "Lora",
                           fontSize: "1rem",
                           textTransform: "capitalize",
@@ -132,7 +137,6 @@ export default function Header() {
                       key={item}
                       sx={{
                         color: "#1E1666",
-                    
 
                         fontFamily: "Lora",
                         fontSize: "1rem",
@@ -151,7 +155,7 @@ export default function Header() {
               <>
                 <img
                   src={Log}
-                  width={130}
+                  width={120}
                   height={"auto"}
                   onClick={refreshPage}
                 />
