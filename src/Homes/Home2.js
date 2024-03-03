@@ -52,7 +52,7 @@ const Home2 = () => {
                   {data.txt}
                   <TypographyText
                     Typography={data.txt1}
-                    color="white"
+                    color="#6a7c92"
                     fontWeight="600"
                     fontSize="1.1rem"
                   />
@@ -98,7 +98,7 @@ const Home2 = () => {
           <TypographyText
             Typography="
                   Projects Completed "
-            color="white"
+           color="#6a7c92"
             fontWeight="600"
             fontSize="1.1rem"
           />
@@ -111,7 +111,7 @@ const Home2 = () => {
                   {data.txt}
                   <TypographyText
                     Typography={data.txt1}
-                    color="white"
+                    color="#6a7c92"
                     fontWeight="600"
                     fontSize="1.1rem"
                   />
