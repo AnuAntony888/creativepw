@@ -95,7 +95,7 @@ const Footercr = () => {
         ))}
       </Grid>
       <Box
-        sx={{ p: "10px", backgroundColor: "#FBE7F2" }}
+        sx={{ p: "10px", backgroundColor: "wheat" }}
         className="homepadding"
       >
         <TypographyText

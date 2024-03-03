@@ -85,7 +85,8 @@ function Homecontent() {
                         <TypographyText
                           Typography={data.Txt1}
                           color="wheat"
-                          variant={"h6"}
+                            variant={"h6"}
+                            fontWeight='600'
                         />
                       </div>
                     </div>
@@ -161,6 +162,7 @@ function Homecontent() {
                     every project.
                   </>
                 }
+                color="#6a7c92"
                 textAlign="left"
                 fontSize={isscreenbw ? ".8rem" : "1rem"}
               />
