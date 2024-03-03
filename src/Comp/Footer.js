@@ -81,7 +81,7 @@ const Footer = () => {
                   key={index}
                 >
                   <ListItemText sx={{ textAlign: "left", padding: "0" }}>
-                    {/* <TypographyText Typography={data.text} color='gray' /> */}
+           
                     <TypographyText Typography={data.text} color="gray" />
                   </ListItemText>
                 </ListItem>

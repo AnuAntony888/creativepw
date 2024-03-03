@@ -99,8 +99,8 @@ const Footercr = () => {
         className="homepadding"
       >
         <TypographyText
-          Typography={
-            <>Toycity © 2020 Powered by Vedaham Business Solutions Pvt Ltd</>
+          Typography={<>Copyright Ⓒ 2024  Creative Power Electromechanical Works L.L.C | All Rights Reserved
+            </>
           }
           fontSize=".9rem"
           textAlign="centre"
