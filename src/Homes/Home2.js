@@ -53,13 +53,13 @@ const Home2 = () => {
                   {data.txt}
                   <TypographyText
                     Typography={data.txt1}
-                    color="black"
+                    color="gray"
                     fontWeight="600"
                     fontSize="1.1rem"
                   />
                 </>
               }
-              color="#1E1666"
+              // color="#1E1666"
               fontSize={sizes}
               fontWeight="600"
             />
@@ -80,18 +80,24 @@ const Home2 = () => {
               start={1}
               end={100}
               duration={2.5}
-              style={{ fontSize: sizes, fontWeight: "600", color: "#1E1666" }}
+              style={{
+                fontSize: sizes, fontWeight: "600",
+                // color: "#1E1666"
+              }}
             />
           )}{" "}
           <span
-            style={{ fontSize: sizes, fontWeight: "600", color: "#1E1666" }}
+            style={{
+              fontSize: sizes, fontWeight: "600",
+              // color: "#1E1666"
+            }}
           >
             +
           </span>
           <TypographyText
             Typography="
                   Projects Completed "
-            color="black"
+                  color="gray"
             fontWeight="600"
             fontSize="1.1rem"
           />
@@ -104,13 +110,13 @@ const Home2 = () => {
                   {data.txt}
                   <TypographyText
                     Typography={data.txt1}
-                    color="black"
+                    color="gray"
                     fontWeight="600"
                     fontSize="1.1rem"
                   />
                 </>
               }
-              color="#1E1666"
+              // color="#1E1666"
               fontSize={sizes}
               fontWeight="600"
             />
@@ -139,7 +145,7 @@ const Home2 = () => {
         <Grid item xs={12}>
           <TypographyText
             Typography={<>Our Services</>}
-            color="#1E1666"
+            // color="#1E1666"
             fontSize={sizes}
             fontWeight="600"
           />
@@ -147,7 +153,7 @@ const Home2 = () => {
         <Grid item xs={12}>
           <hr
             width="50px;"
-            color="red"
+            color="#DA117B"
             size="5"
             style={{ margin: "auto" }}
           ></hr>

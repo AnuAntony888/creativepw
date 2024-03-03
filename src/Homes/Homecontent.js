@@ -117,7 +117,7 @@ function Homecontent() {
                     Electromechanical Works L.L.C
                   </>
                 }
-                color="#1E1666"
+                // color="#1E1666"
                 fontSize={
                   isSmallScreen ? (isSmallScreen1 ? "20px" : "24px") : "30px"
                 }
@@ -128,7 +128,7 @@ function Homecontent() {
             <Grid item xs={12}>
               <hr
                 width="50px;"
-                color="red"
+                color="#DA117B"
                 size="5"
                 style={{ margin: !isSmallScreen ? 0 : "auto" }}
               ></hr>

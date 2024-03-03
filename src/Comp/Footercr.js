@@ -41,7 +41,7 @@ const Footercr = () => {
               fontWeight="600"
               fontSize={"1.2rem"}
               textAlign="left"
-              color="#1E1666"
+              // color="#1E1666"
             />
             <List>
               {data.data.map((post, indexs) => (
@@ -69,7 +69,7 @@ const Footercr = () => {
               fontWeight="600"
               fontSize={"1.2rem"}
               textAlign="left"
-              color="#1E1666"
+              // color="#1E1666"
             />
             <List>
               {data.data.map((post, indexs) => (
@@ -104,7 +104,7 @@ const Footercr = () => {
           }
           fontSize=".9rem"
           textAlign="centre"
-          color="#1E1666"
+          // color="#1E1666"
           fontWeight="600"
         />
       </Box>

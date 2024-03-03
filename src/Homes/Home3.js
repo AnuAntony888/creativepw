@@ -112,7 +112,7 @@ const Home3 = () => {
         <Grid item xs={12}>
           <TypographyText
             Typography={<>Our Projects</>}
-            color="#1E1666"
+            // color="#1E1666"
             fontSize={sizes}
             fontWeight="600"
           />
@@ -120,7 +120,7 @@ const Home3 = () => {
         <Grid item xs={12}>
           <hr
             width="50px;"
-            color="red"
+            color="#DA117B"
             size="5"
             style={{ margin: "auto" }}
           ></hr>
@@ -155,18 +155,7 @@ const Home3 = () => {
                         },
                       }}
                     >
-                      {/* <LazyLoadImage
-                        component="img"
-                        src={post.img}
-                        style={{
-                          margin: "auto",
-                          width: "100%",
-                          objectFit: "contain",
-                          borderRadius: "20px",
-                          display:'block'
-                        }}
-                        alt={post.name}
-                      /> */}
+                  
                       <CardMedia     component="img"
                         src={post.img}
                         sx={{

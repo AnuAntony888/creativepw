@@ -78,9 +78,9 @@ export default function Header() {
                 <Box>
                   <Button
                     sx={{
-                      color: "#1E1666",
+                      // color: "#1E1666",
                       // fontWeight: "600",
-
+                      color: "black",
                       fontFamily: "Lora",
                       fontSize: "1rem",
                       textTransform: "capitalize",
@@ -103,7 +103,7 @@ export default function Header() {
                         aria-expanded={open ? "true" : undefined}
                         onClick={handleClick}
                         sx={{
-                          color: "#1E1666",
+                          color: "black",
 
                           fontFamily: "Lora",
                           fontSize: "1rem",
@@ -136,8 +136,8 @@ export default function Header() {
                       disableRipple
                       key={item}
                       sx={{
-                        color: "#1E1666",
-
+                        // color: "#1E1666",
+                        color: "black",
                         fontFamily: "Lora",
                         fontSize: "1rem",
                         textTransform: "capitalize",
