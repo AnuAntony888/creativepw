@@ -80,3 +80,15 @@
   flex-wrap: wrap;
   /* max-height: 500px; */
 }
+
+.blodcontent{
+  font-weight: bolder !important;
+color: black !important;
+font-size: 1.2rem !important;
+}
+
+.blodcontent1{
+  font-weight: bolder !important;
+
+
+}

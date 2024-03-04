@@ -1,13 +1,15 @@
 import React from "react";
 
 import Card from "@mui/material/Card";
-import SettingsIcon from '@mui/icons-material/Settings';
+import SettingsIcon from "@mui/icons-material/Settings";
 import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import "../Global.css";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { Box, CardActions, CardMedia, Grid, Typography } from "@mui/material";
+import { Parallax } from "react-parallax";
+import { Link } from "react-router-dom";
 export function TypographyText(props) {
   return (
     <Typography
@@ -34,7 +36,6 @@ export function TypographyText(props) {
       component={props.component}
       className={props.className}
       fontFamily="Lora"
-  
       dangerouslySetInnerHTML={props.dangerouslySetInnerHTML}
     >
       {props.Typography}
@@ -58,7 +59,7 @@ export function Buttons(props) {
         marginBottom: props.marginBottom,
         transform: props.transform,
         minWidth: "100px",
-        zIndex:props.zIndex,
+        zIndex: props.zIndex,
         // fontFamily: 'Lato',
         fontFamily: "Lora",
         ":hover": {
@@ -80,7 +81,7 @@ export function AllCards(props) {
     <Card
       sx={{
         boxShadow: props.boxShadow,
-        p:props.txtTypography1?'0': "5%",
+        p: props.txtTypography1 ? "0" : "5%",
         backgroundColor: props.backgroundColor,
         textAlign: props.textAlignco,
 
@@ -95,17 +96,22 @@ export function AllCards(props) {
         width={props.width}
         height={props.height}
         image={props.image}
-        sx={{ objectFit: "contain",objectFit:props.txtTypography1 ?'cover':'contain' }}
+        sx={{
+          objectFit: "contain",
+          objectFit: props.txtTypography1 ? "cover" : "contain",
+        }}
       />
       <CardContent>
-        {props.txtTypography1 ?
+        {props.txtTypography1 ? (
           <TypographyText
             Typography={props.txtTypography1}
-     
             color={props.txt2color}
-          textAlign={props.txttextAlign}
-          fontWeight={props.txt2fontWeight}
-          /> : ''}
+            textAlign={props.txttextAlign}
+            fontWeight={props.txt2fontWeight}
+          />
+        ) : (
+          ""
+        )}
         <TypographyText
           Typography={props.Typography1}
           color={props.txt1color}
@@ -141,8 +147,9 @@ export function AllCards(props) {
 export function CardsSection(props) {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("md"));
-  return (<>
-   <Grid
+  return (
+    <>
+      <Grid
         container
         spacing={2}
         sx={{
@@ -151,7 +158,7 @@ export function CardsSection(props) {
           backgroundSize: "cover", // Added property to cover the background
           backgroundPosition: "center", // Added property to center the background
           padding: "6%",
-          pt:isSmallScreen?'100px':''
+          pt: isSmallScreen ? "100px" : "",
         }}
       >
         <Grid item xs={12}>
@@ -170,7 +177,7 @@ export function CardsSection(props) {
             >
               <Box sx={{}}>
                 <TypographyText
-                  Typography={      props.txt1}
+                  Typography={props.txt1}
                   color="white"
                   fontWeight="bolder"
                   fontSize={!isSmallScreen ? "40px" : "30px"}
@@ -178,9 +185,7 @@ export function CardsSection(props) {
                   // variant={!isSmallScreen ? "h2" : "h3"}
                 />
                 <TypographyText
-                  Typography={
-             props.txt2
-                  }
+                  Typography={props.txt2}
                   color="white"
                   textAlign={!isSmallScreen ? "left" : "centre"}
                 />
@@ -190,84 +195,75 @@ export function CardsSection(props) {
               <img
                 src={props.imges}
                 alt=""
-                width='90%'
+                width="90%"
                 style={{ margin: "auto" }}
               />
             </Grid>
           </Grid>
         </Grid>
-      </Grid></>)
+      </Grid>
+    </>
+  );
 }
-
-
-
 
 export function Banner1(props) {
-  return (<>
-  <img src={props.image} alt="" width='100%' style={{maxHeight:'50vh'}}/></>)
+  return (
+    <>
+      <img
+        src={props.image}
+        alt=""
+        width="100%"
+        style={{ maxHeight: "50vh" }}
+      />
+    </>
+  );
 }
 
-
-
-
-
-
-
-
-export function Section2(props) { 
+export function Section2(props) {
   return (
     <Grid
-    container
-    spacing={2}
-    sx={{
-      pl: "10%",
-      pr: "10%",
-      // pb: "5%",
-      // pt: "5%",
-      pt:  props.pt ,
-      margin: "auto",
-      alignItems: "center",
-      justifyContent: "center",
-      backgroundImage:`url(${props.backgroundImage})`
-    }}
-  >
-    <Grid item xs={12}>
-      <TypographyText
+      container
+      spacing={2}
+      sx={{
+        pl: "10%",
+        pr: "10%",
+        // pb: "5%",
+        // pt: "5%",
+        pt: props.pt,
+        margin: "auto",
+        alignItems: "center",
+        justifyContent: "center",
+        backgroundImage: `url(${props.backgroundImage})`,
+      }}
+    >
+      <Grid item xs={12}>
+        <TypographyText
           Typography={
             props.text1
-          // <>SEO Services Perfectly Customized to Industry Standards</>
-        }
-        color="#1E1666"
-        fontSize="30px"
-        fontWeight="600"
-      />
+            // <>SEO Services Perfectly Customized to Industry Standards</>
+          }
+          color="#1E1666"
+          fontSize="30px"
+          fontWeight="600"
+        />
+      </Grid>
+      <Grid item xs={12}>
+        <hr width="100px;" color="red" size="5" style={{ margin: "auto" }}></hr>
+      </Grid>
+      <Grid item xs={12}>
+        <br />
+        <TypographyText Typography={props.text2} color="#6A7C92" />
+      </Grid>
     </Grid>
-    <Grid item xs={12}>
-      <hr
-        width="100px;"
-        color="red"
-        size="5"
-        style={{ margin: "auto" }}
-      ></hr>
-    </Grid>
-    <Grid item xs={12}>
-      <br />
-      <TypographyText
-        Typography={  props.text2
-    
-        }
-        color="#6A7C92"
-      />
-    </Grid>
-  </Grid>
-  )
+  );
 }
 
 export function LeftRigt(props) {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("md"));
-  return (<>
-     <Grid
+  return (
+    <>
+      <Grid
         container
         spacing={1}
         sx={{
@@ -277,11 +273,7 @@ export function LeftRigt(props) {
         {" "}
         <Grid item lg={6} md={6} sm={12} xs={12} sx={{ margin: "auto" }}>
           <br /> <br />
-          <img
-            src={props.img}
-            alt=""
-            width="80%"
-          />
+          <img src={props.img} alt="" width="80%" />
         </Grid>
         <Grid item lg={6} md={6} xs={12} sm={12}>
           <br /> <br />
@@ -290,9 +282,7 @@ export function LeftRigt(props) {
             <br />
             <Grid item xs={12}>
               <TypographyText
-                Typography={
-                 props.txt1
-                }
+                Typography={props.txt1}
                 color="#1E1666"
                 fontSize="30px"
                 fontWeight="600"
@@ -310,9 +300,7 @@ export function LeftRigt(props) {
             <Grid item xs={12}>
               <br />
               <TypographyText
-                Typography={
-                  props.txt2
-                }
+                Typography={props.txt2}
                 color="#6A7C92"
                 textAlign="left"
               />
@@ -330,49 +318,148 @@ export function LeftRigt(props) {
                       fontWeight="600"
                       textAlign="left"
                     />
-<br/>
+                    <br />
                     <TypographyText
                       Typography={data.listtxt1}
                       color="#6A7C92"
                       textAlign="left"
                     />
                   </div>
-            <br/>
-                  {data.Buttonname ? <Box
-                    sx={{
-                      display: "flex",
-                      justifyContent: !isSmallScreen
-                        ? "flex-start"
-                        : "center",
-                    }}
-                  >
-                    <Buttons
-                       Buttonname={data.Buttonname}
-                      fontWeight="600"
-                      color="red"
-                    // className="button1"
-                    />
-                  </Box> : ''}
+                  <br />
+                  {data.Buttonname ? (
+                    <Box
+                      sx={{
+                        display: "flex",
+                        justifyContent: !isSmallScreen
+                          ? "flex-start"
+                          : "center",
+                      }}
+                    >
+                      <Buttons
+                        Buttonname={data.Buttonname}
+                        fontWeight="600"
+                        color="red"
+                        // className="button1"
+                      />
+                    </Box>
+                  ) : (
+                    ""
+                  )}
                 </card>
               </Grid>
             ))}
           </Grid>
         </Grid>
       </Grid>
-  </>)
+    </>
+  );
 }
 
-export function ImageIcon(props) { 
-  const { icon: Icon, txt } = props; 
-  return (<>
-    <Button sx={{ backgroundColor: '#F5F9FC', borderRadius: '20px', minWidth: '200px',color:'red',textTransform:'capitalize' }}>
-    {typeof Icon === 'string' ? (
-          <img src={Icon} alt="icon" style={{ width: '24px', height: '24px', marginRight: '8px' }} />
+export function ImageIcon(props) {
+  const { icon: Icon, txt } = props;
+  return (
+    <>
+      <Button
+        sx={{
+          backgroundColor: "#F5F9FC",
+          borderRadius: "20px",
+          minWidth: "200px",
+          color: "red",
+          textTransform: "capitalize",
+        }}
+      >
+        {typeof Icon === "string" ? (
+          <img
+            src={Icon}
+            alt="icon"
+            style={{ width: "24px", height: "24px", marginRight: "8px" }}
+          />
         ) : (
-          Icon && <Icon sx={{ color: 'red', marginRight: '8px' }} />
+          Icon && <Icon sx={{ color: "red", marginRight: "8px" }} />
         )}
         {/* {Icon && <Icon sx={{color:'red'}} />}  */}
         &nbsp; {txt}
       </Button>
-  </>)
+    </>
+  );
+}
+
+
+
+export function Parall(props) {
+  // Use React hooks inside a React function component
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("md"));
+
+  return (
+      <div>
+          <Parallax
+              bgImage={props.imges}
+              strength={300}
+              style={{
+                  backgroundSize: "cover",
+                  objectFit: "cover",
+                  height: "70vh",
+                  display: "flex",
+                  alignItems: "center",
+                  width: "100%",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "bottom",
+              }}
+          >
+              <Grid
+                  container
+                  spacing={0}
+                  className="large-header"
+                  sx={{
+                      height: "70vh",
+                  }}
+              >
+                  <Box
+                      sx={{
+                          position: "absolute",
+                          top: 0,
+                          right: 0,
+                          bottom: 0,
+                          width: "100%",
+                          left: 0,
+                          backgroundColor: "rgba(0,0,0,.7)",
+                      }}
+                  ></Box>
+
+                  <Grid
+                      container
+                      Spacing={3}
+                      sx={{
+                          zIndex: 1,
+                      }}
+                  >
+                      <Grid item xs={12} sx={{ margin: "auto", p: "2%" }}>
+                          <div data-aos="fade-right">
+                              <Typography
+                                  variant="h5"
+                                  color="textPrimary"
+                                  fontWeight="600"
+                  textAlign="center"
+                  color='white'
+                                  fontSize={isSmallScreen ? "1.25rem" : "1.3rem"}
+                              >
+                                { props.txt}
+                              </Typography>
+                              <br />
+                              <Buttons
+                                  className="button1"
+                                  Buttonname={
+                                      <Link to="/contactus">Contact Us</Link>
+                                  }
+                                  bgcolor="#BD0F65"
+                                  bgcolor1="#BD0F65"
+                              />
+                          </div>
+                      </Grid>
+                  </Grid>
+              </Grid>
+          </Parallax>
+      </div>
+  );
 }

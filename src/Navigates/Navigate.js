@@ -9,6 +9,8 @@ import Mission from "../About/Mission";
 import Strent from "../About/Strent";
 import Quality from "../About/Quality";
 import Saftey from "../About/Saftey";
+import Electrical from "../Service/Electrical";
+import Plumbing from "../Service/Plumbing";
 
 const Navigate = () => {
   return (
@@ -23,7 +25,9 @@ const Navigate = () => {
         <Route path="/missionvission" element={<Mission />}></Route>
         <Route path="/ourstrength" element={<Strent />}></Route>
         <Route path="/qualtyassurance" element={<Quality />}></Route>
-        <Route path="/safetymanagement" element={<Saftey/>}></Route>
+        <Route path="/safetymanagement" element={<Saftey />}></Route>
+        <Route path="/electricalcontracting" element={<Electrical />}></Route>
+        <Route path="/plumbingcontracting" element={<Plumbing/>}></Route>
       </Routes>
 
       <div>
