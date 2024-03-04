@@ -133,8 +133,9 @@ const Home2 = () => {
         sx={{
           pr: "6%",
           pt: "4%",
-          pb: "50px",
+          pb: "6%",
           pl: "6%",
+          justifyContent: "center",
         }}>
               <Grid item xs={12}>
           <TypographyText
@@ -161,7 +162,8 @@ const Home2 = () => {
         textAlign="left"
         color="#6a7c92"      
               />
-
+          <br />
+          <br/>
 
 </Grid>
 
@@ -172,8 +174,8 @@ const Home2 = () => {
               image={data.image}
               height="70px"
               width="70px"
-              backgroundColor="#FFFFFF"
-              boxShadow="9px 17px 30px 0px rgba(0,0,0,.1)"
+              backgroundColor="#ffffff"
+              boxShadow="9px 17px 30px 0px rgba(0,0,0,.7)"
               backgroundColor1="#FFFFFF"
               txt1color="black"
               txt2color="#6a7c92"
