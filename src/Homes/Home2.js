@@ -38,9 +38,10 @@ const Home2 = () => {
         sx={{
           pl: "6%",
           pr: "6%",
-          pt: "2%",
+          pt: "3%",
           pb: "50px",
-          backgroundColor: "wheat",
+          // backgroundColor: "#F3A1C7",
+          backgroundColor:'#BD0F65',
           margin: "auto",
         }}
       >
@@ -52,15 +53,15 @@ const Home2 = () => {
                   {data.txt}
                   <TypographyText
                     Typography={data.txt1}
-                    color="#6a7c92"
-                    fontWeight="600"
+                    color="#fff"
+                    // fontWeight="600"
                     fontSize="1.1rem"
                   />
                 </>
               }
-              // color="#1E1666"
+              color="#FFFFFF"
               fontSize={sizes}
-              fontWeight="600"
+              fontWeight="bolder"
             />
           </Grid>
         ))}
@@ -81,16 +82,16 @@ const Home2 = () => {
               duration={2.5}
               style={{
                 fontSize: sizes,
-                fontWeight: "600",
-                // color: "#1E1666"
+                fontWeight: "bolder",
+                color:"#fff"
               }}
             />
           )}{" "}
           <span
             style={{
               fontSize: sizes,
-              fontWeight: "600",
-              // color: "#1E1666"
+              fontWeight: "bolder",
+              color:"#fff"
             }}
           >
             +
@@ -98,8 +99,8 @@ const Home2 = () => {
           <TypographyText
             Typography="
                   Projects Completed "
-           color="#6a7c92"
-            fontWeight="600"
+           color="#fff"
+      
             fontSize="1.1rem"
           />
         </Grid>
@@ -111,13 +112,14 @@ const Home2 = () => {
                   {data.txt}
                   <TypographyText
                     Typography={data.txt1}
-                    color="#6a7c92"
-                    fontWeight="600"
+                    color="#fff"
+                    // fontWeight="600"
                     fontSize="1.1rem"
                   />
                 </>
               }
               // color="#1E1666"
+              color="#fff"
               fontSize={sizes}
               fontWeight="600"
             />
@@ -180,10 +182,9 @@ const Home2 = () => {
               Typography1={data.Typography1}
               Typography2={data.Typography2}
               txt1fontWeight="bolder"
-        
+              txt2textAlign='justifyContent'
               fontWeight="600"
-              color="red"
-              //   txt2textAlign="left"
+          
             />
           </Grid>
         ))}
@@ -283,11 +284,11 @@ const Data = [{ txt: "2014", txt1: "Established" }];
 const coose = [
   {
 
-    image:
-      "https://tse2.mm.bing.net/th?id=OIP.eU8MX_P_BjrtFhY2mpftwAHaHa&pid=Api&P=0&h=180",
+    image:'https://www.adinternationalbv.com/wp-content/uploads/2016/12/quality-label-round.png',
+      // "https://tse2.mm.bing.net/th?id=OIP.eU8MX_P_BjrtFhY2mpftwAHaHa&pid=Api&P=0&h=180",
     Typography1: "Quality",
     Typography2:
-      "At Creative Power Electromechanical Works L.L.C, we continuously strive to provide the highest quality and service standards, aiming to serve our customers in the most exemplary manner possible.",
+      <>At Creative Power Electromechanical Works L.L.C, we continuously strive to provide the highest quality and service standards, aiming to serve our customers in the most exemplary manner possible.</>,
   },
   {
 

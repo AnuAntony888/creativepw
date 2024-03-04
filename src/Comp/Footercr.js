@@ -17,13 +17,15 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 const Footercr = () => {
   return (
     <div>
+      {/* <hr/> */}
       <Grid
         container
         spacing={2}
         sx={{
-          pt: "2%",
+          // pt: "2%",
           margin: "auto",
           bgcolor: "#E7E9ED",
+
           pl: "6%",
           pr: "6%",
           pb: "2%",
@@ -41,6 +43,7 @@ const Footercr = () => {
               fontWeight="600"
               fontSize={"1.2rem"}
               textAlign="left"
+
               // color="#1E1666"
             />
             <List>
@@ -52,7 +55,10 @@ const Footercr = () => {
                   <ListItemText
                     sx={{ textAlign: "left", padding: "0", fontFamily: "Lora" }}
                   >
-                    <Link to={post.link} style={{ fontFamily: "Lora" }}>
+                    <Link
+                      to={post.link}
+                      style={{ fontFamily: "Lora", color: "      #6a7c92" }}
+                    >
                       {post.label}
                     </Link>
                   </ListItemText>
@@ -77,14 +83,19 @@ const Footercr = () => {
                   sx={{ textAlign: "left", padding: "0 !important" }}
                   key={indexs}
                 >
-                  <ListItemIcon sx={{ minWidth: "30px" }}>
+                  <ListItemIcon
+                    sx={{ minWidth: "30px", color: "      #6a7c92" }}
+                  >
                     {post.icon}
                   </ListItemIcon>
 
                   <ListItemText
                     sx={{ textAlign: "left", padding: "0", fontFamily: "Lora" }}
                   >
-                    <Link to={post.link} style={{ fontFamily: "Lora" }}>
+                    <Link
+                      to={post.link}
+                      style={{ fontFamily: "Lora", color: "      #6a7c92" }}
+                    >
                       {post.label}
                     </Link>
                   </ListItemText>
@@ -95,16 +106,19 @@ const Footercr = () => {
         ))}
       </Grid>
       <Box
-        sx={{ p: "10px", backgroundColor: "wheat" }}
+        sx={{ p: "10px", backgroundColor: "#BD0F65" }}
         className="homepadding"
       >
         <TypographyText
-          Typography={<>Copyright Ⓒ 2024  Creative Power Electromechanical Works L.L.C | All Rights Reserved
+          Typography={
+            <>
+              Copyright Ⓒ 2024 Creative Power Electromechanical Works L.L.C |
+              All Rights Reserved
             </>
           }
           fontSize=".9rem"
           textAlign="centre"
-          // color="#1E1666"
+          color="white"
           fontWeight="600"
         />
       </Box>
@@ -143,17 +157,17 @@ const Menu1 = [
       {
         label: "+971 4 2981 609",
         link: "/",
-        icon: <PhoneIcon sx={{ color: "black" }} />,
+        icon: <PhoneIcon sx={{ color: "      #6a7c92" }} />,
       },
       {
         label: "info@creativepw.com",
         link: "/",
-        icon: <EmailIcon sx={{ color: "black" }} />,
+        icon: <EmailIcon sx={{ color: "      #6a7c92" }} />,
       },
       {
         label: "www.creativepw.com",
         link: "/",
-        icon: <LanguageIcon sx={{ color: "black" }} />,
+        icon: <LanguageIcon sx={{ color: "      #6a7c92" }} />,
       },
 
       {
@@ -164,7 +178,7 @@ const Menu1 = [
           </>
         ),
         link: "/",
-        icon: <LocationOnIcon sx={{ color: "black" }} />,
+        icon: <LocationOnIcon sx={{ color: "      #6a7c92" }} />,
       },
     ],
   },

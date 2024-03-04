@@ -33,7 +33,7 @@ function Homecontent() {
                     style={{ width: "100%", height: "100%", zIndex: -1 }}
                   />
 
-                  <Box sx={{ p: "2%", backgroundColor: "rgba(0, 0, 0, 0.6)" }}>
+                  <Box sx={{ p: "2%", backgroundColor: "#BD0F65" }}>
                     <TypographyText
                       Typography={data.Txt}
                       color="white"
