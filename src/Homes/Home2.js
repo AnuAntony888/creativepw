@@ -160,7 +160,8 @@ const Home2 = () => {
         <TypographyText
             Typography={<>When selecting Creative Power Electromechanical Works L.L.C, you gain access to comprehensive MEP solutions tailored to your specific needs. Our Engineering Division boasts expertise in conceptual design and development, supported by a skilled team capable of handling projects of any scale, whether residential, industrial, or commercial. Additionally, our Maintenance Division ensures the ongoing reliability of projects during their defect liability period, equipped with all necessary tools and equipment. From design to supply, installation, testing, and commissioning, Creative Power offers a seamless MEP contracting experience covering Electrical, Fire, and other essential systems. Trust us for excellence, reliability, and efficiency in your electromechanical projects.</>}
         textAlign="left"
-        color="#6a7c92"      
+            color="#6a7c92"      
+            fontSize='15px'
               />
           <br />
           <br/>

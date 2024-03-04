@@ -199,6 +199,21 @@ export function CardsSection(props) {
       </Grid></>)
 }
 
+
+
+
+export function Banner1(props) {
+  return (<>
+  <img src={props.image} alt="" width='100%' style={{maxHeight:'50vh'}}/></>)
+}
+
+
+
+
+
+
+
+
 export function Section2(props) { 
   return (
     <Grid

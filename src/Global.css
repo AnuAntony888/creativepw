@@ -3,7 +3,7 @@
   border-radius: 3px !important;
   padding: 8px 30px !important;
   color: white !important;
-  background-color: lightpink;
+  /* background-color: #BD0F65; */
 }
 
 .slick-slide > div {
@@ -37,4 +37,46 @@
   margin: auto;
   border-radius: 50% !important;
   background-color: transparent !important;
+}
+.large-header {
+  position: relative;
+  width: 100% !important;
+  background: transparent;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  z-index: 1;
+
+}
+.react-parallax-content{width: 100% !important;}
+
+
+
+
+.dropdown {
+  position: inherit !important;
+  display: inline-block;
+  padding-bottom: 25px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100vw;
+  /* width: 100%; */
+  left: 0;
+  top: 100%;
+
+  align-items: center;
+  padding-top: 50px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  /* max-height: 500px; */
 }

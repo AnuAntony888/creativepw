@@ -14,6 +14,7 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
 import LanguageIcon from "@mui/icons-material/Language";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
+import SmartphoneIcon from '@mui/icons-material/Smartphone';
 const Footercr = () => {
   return (
     <div>
@@ -155,9 +156,17 @@ const Menu1 = [
     text: "Address",
     data: [
       {
-        label: "+971 4 2981 609",
+        label: <>
+      
+          +971 42731990</>,
         link: "/",
         icon: <PhoneIcon sx={{ color: "      #6a7c92" }} />,
+      },
+      {
+        label: '+971 551474827',
+    
+        link: "/",
+        icon: <SmartphoneIcon sx={{ color: "      #6a7c92" }} />,
       },
       {
         label: "info@creativepw.com",

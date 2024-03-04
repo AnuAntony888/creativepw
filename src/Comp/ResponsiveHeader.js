@@ -57,41 +57,7 @@ const ResponsiveHeader = () => {
               </ListItemText>
             </ListItemButton>
           </ListItem>
-          <ListItem disablePadding>
-            <Button
-              id="basic-button"
-              aria-controls={open ? "basic-menu" : undefined}
-              aria-haspopup="true"
-              aria-expanded={open ? "true" : undefined}
-              onClick={handleClick}
-              sx={{
-                color: "#2C08D9",
-                fontWeight: "500",
-paddingLeft:'16px',
-                fontFamily: "Inter",
-                fontSize: "1rem",
-                textTransform: "capitalize",
-
-                minWidth: "120px",
-                justifyContent: "flex-start",
-              }}
-            >
-              Services &nbsp;&nbsp;&nbsp; <ArrowDropDownIcon/>
-            </Button>
-            <Menu
-              id="basic-menu"
-              anchorEl={anchorEl}
-              open={open}
-              onClose={handleClose}
-              MenuListProps={{
-                "aria-labelledby": "basic-button",
-              }}
-            >
-              {dropdown.map((data, index) => (
-                <MenuItem onClick={handleClose}>{data}</MenuItem>
-              ))}
-            </Menu>
-          </ListItem>
+  
 
           {navItems.map((item) => (
             <ListItem key={item} disablePadding>

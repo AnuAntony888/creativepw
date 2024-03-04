@@ -164,7 +164,7 @@ function Homecontent() {
                 }
                 color="#6a7c92"
                 textAlign="left"
-                fontSize={isscreenbw ? ".8rem" : "1rem"}
+                fontSize='15px'
               />
             </Grid>
           </Grid>

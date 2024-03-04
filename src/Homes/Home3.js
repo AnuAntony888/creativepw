@@ -125,7 +125,7 @@ const Home3 = () => {
             style={{ margin: "auto" }}
           ></hr>
         </Grid>
-        <Grid item xs={12}></Grid>
+    
       </Grid>
       <Grid
         container

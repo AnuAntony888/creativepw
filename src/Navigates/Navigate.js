@@ -4,6 +4,11 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "../Comp/Header";
 import Home from "../Homes/Home";
 import Footercr from "../Comp/Footercr";
+import Introduction from "../About/Introduction";
+import Mission from "../About/Mission";
+import Strent from "../About/Strent";
+import Quality from "../About/Quality";
+import Saftey from "../About/Saftey";
 
 const Navigate = () => {
   return (
@@ -14,6 +19,11 @@ const Navigate = () => {
 
       <Routes>
         <Route path="/" element={<Home />}></Route>
+        <Route path="/introduction" element={<Introduction />}></Route>
+        <Route path="/missionvission" element={<Mission />}></Route>
+        <Route path="/ourstrength" element={<Strent />}></Route>
+        <Route path="/qualtyassurance" element={<Quality />}></Route>
+        <Route path="/safetymanagement" element={<Saftey/>}></Route>
       </Routes>
 
       <div>
