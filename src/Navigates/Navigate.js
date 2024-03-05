@@ -11,6 +11,7 @@ import Quality from "../About/Quality";
 import Saftey from "../About/Saftey";
 import Electrical from "../Service/Electrical";
 import Plumbing from "../Service/Plumbing";
+import HVAC from "../Service/HVAC";
 
 const Navigate = () => {
   return (
@@ -27,7 +28,8 @@ const Navigate = () => {
         <Route path="/qualtyassurance" element={<Quality />}></Route>
         <Route path="/safetymanagement" element={<Saftey />}></Route>
         <Route path="/electricalcontracting" element={<Electrical />}></Route>
-        <Route path="/plumbingcontracting" element={<Plumbing/>}></Route>
+        <Route path="/plumbingcontracting" element={<Plumbing />}></Route>
+        <Route path="/HVACcontracting" element={<HVAC/>}></Route>
       </Routes>
 
       <div>

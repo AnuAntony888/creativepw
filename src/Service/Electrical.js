@@ -209,10 +209,11 @@ const Electrical = () => {
 
 export default Electrical;
 const Imageset = [
+    {
+        img: "https://www.rmjeconstruction.com/wp-content/uploads/2019/09/electrical-contractor-philippines-1024x681.jpg",
+      },
   {
-    img: "https://content.jdmagicbox.com/comp/idukki/g7/9999p4863.4863.190907103449.a9g7/catalogue/empower-engineers-thodupuzha-idukki-industrial-electrical-contractors-8prnazb5ha.jpg?clr=",
+    img: "https://www.maxpwrdubai.com/wp-content/uploads/2022/10/1-555x400.jpeg",
   },
-  {
-    img: "https://content.jdmagicbox.com/comp/idukki/g7/9999p4863.4863.190907103449.a9g7/catalogue/empower-engineers-thodupuzha-idukki-industrial-electrical-contractors-8prnazb5ha.jpg?clr=",
-  },
+
 ];
