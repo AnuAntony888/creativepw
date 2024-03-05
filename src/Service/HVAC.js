@@ -14,7 +14,7 @@ const HVAC = () => {
   const sizes = isSmallScreen ? (isSmallScreen1 ? "20px" : "24px") : "30px";
   return (
     <div>
-      <Banner1 image="https://www.maxpwrdubai.com/wp-content/uploads/2022/10/heating-ventilation-air-conditioning-systems-227465-600x400.jpeg" />
+      <Banner1 image="http://www.completeheatingandairutah.com/wp-content/uploads/2015/06/Air-Conditioning-Contractor.jpg" />
       <Grid
         container
         spacing={2}
@@ -27,8 +27,7 @@ const HVAC = () => {
       >
         <Grid item xs={12}>
           <TypographyText
-            Typography={<>
-           HVAC & Air Conditioning Contracting </>}
+            Typography={<>HVAC & Air Conditioning Contracting </>}
             fontSize={sizes}
             fontWeight="600"
           />
@@ -46,45 +45,54 @@ const HVAC = () => {
             fontSize="15px"
             Typography={
               <>
-                Creative Power Electromechanical Works L.L.C is your premier
-                destination for cutting-edge electrical services and contracting
-                solutions. Our company prides itself on staying ahead of
-                advancements and trends in electrical installations, ensuring
-                that we provide the most innovative and efficient solutions to
-                meet your needs. From system design to troubleshooting,
-                upgrades, testing, and commissioning, we offer a comprehensive
-                range of services tailored to commercial, residential, and
-                industrial clients in Dubai and across the UAE.
+                Creative Power Electromechanical Works L.L.C. specializes in
+                comprehensive HVAC solutions, ensuring your comfort and peace of
+                mind in both residential and commercial spaces across Dubai. Our
+                team of seasoned professionals is dedicated to delivering
+                top-tier services, from installation to maintenance and repair,
+                tailored to meet your specific needs.
                 <br />
                 <br />
-                As a leading provider of electrical services, we boast a team of
-                highly qualified and licensed professionals dedicated to
-                delivering top-notch solutions. Our expertise spans a wide range
-                of projects, from residential villas to commercial buildings,
-                all adhering to DEWA regulations and industry standards. We
-                understand the importance of maintaining electrical systems in
-                optimal condition to prevent economic losses and potential
-                hazards, which is why we prioritize thorough inspections and
-                timely maintenance.
+                <span className="blodcontent">
+                  Why Opt for Creative Power Electromechanical Works L.L.C.?
+                </span>
                 <br />
                 <br />
-                At Creative Power, we understand that safety, efficiency, and
-                reliability are paramount when it comes to electrical systems.
-                That's why all our electricians are not only licensed but also
-                experienced in handling all aspects of electrical services.
-                Whether it's designing new electrical systems or troubleshooting
-                existing ones, our team possesses the skills and knowledge
-                needed to tackle even the most complex projects with precision
-                and professionalism.
+                <span className="blodcontent1">
+                  Expertise and Innovation:{" "}
+                </span>{" "}
+                With years of hands-on experience and a commitment to
+                innovation, our technicians possess the skills and knowledge
+                required to tackle even the most complex HVAC challenges. From
+                installation to troubleshooting, we employ cutting-edge
+                techniques and industry-best practices to ensure superior
+                results.
                 <br />
                 <br />
-                Our commitment to excellence extends beyond just providing
-                superior electrical services. We also assist clients throughout
-                the DEWA approval process, handling paperwork, arranging
-                inspections, and ensuring compliance every step of the way. With
-                Creative Power, you can rest assured that your electrical
-                projects are in capable hands, allowing you to focus on other
-                aspects of your business or property management.
+                <span className="blodcontent1">Enhanced Efficiency: </span>Our
+                certified technicians leverage advanced tools and technology to
+                optimize the efficiency of your HVAC systems. Whether it's a
+                routine maintenance check or a full-scale installation, we
+                strive to maximize energy efficiency and minimize operational
+                costs, keeping your systems running smoothly for years to come.
+                <br />
+                <br />{" "}
+                <span className="blodcontent1">Time-Saving Solutions: </span>We
+                understand the value of your time and prioritize swift,
+                efficient service delivery. By entrusting your HVAC needs to
+                Creative Power Electromechanical Works L.L.C., you can rest
+                assured that your projects will be completed promptly and with
+                meticulous attention to detail, minimizing disruptions to your
+                daily routine.
+                <br />
+                <br /> <span className="blodcontent1">Safety First: </span>Your
+                safety is our top priority. Our team adheres to stringent safety
+                protocols and guidelines throughout every project, ensuring the
+                well-being of both our clients and our staff. From rigorous
+                quality checks to meticulous installation practices, we take
+                every precaution to safeguard your home or business environment.
+                <br />
+                <br />{" "}
               </>
             }
             color="#6a7c92"
@@ -96,9 +104,10 @@ const HVAC = () => {
           <Grid
             item
             xs={12}
-            lg={index === 0 ? 4 : 8}
-            md={index === 0 ? 4 : 8}
-            sm={12}
+            lg={index === 1 || index === 2 ? 8 : 4}
+            md={index === 1 || index === 2 ? 8 : 4}
+            sm={index === 1 || index === 2 ? 8 : 4}
+            key={index}
           >
             <img
               src={data.img}
@@ -117,57 +126,48 @@ const HVAC = () => {
             fontSize="15px"
             Typography={
               <>
+                {" "}
                 <span className="blodcontent">
-                  Benefits of Choosing Creative Power Electromechanical Works
-                  L.L.C:
+                  Our Comprehensive Services Include:
                 </span>
                 <br />
+                <br /><span className="blodcontent1">
+                HVAC Installation and Maintenance:      </span>From central air conditioning
+                systems to specialized ventilation solutions, we offer
+                comprehensive installation and maintenance services tailored to
+                your unique requirements.
                 <br />
-                <span className="blodcontent1">Safety:</span>
-                Our priority is ensuring that all electrical systems and
-                components are installed, maintained, and repaired safely to
-                prevent accidents or injuries.
+                <br /><span className="blodcontent1">
+                Chiller Plant Installation and Maintenance:       </span>We specialize in the
+                installation and maintenance of chiller plants, cooling towers,
+                and chilled water pumps, ensuring optimal performance and
+                longevity.
                 <br />
+                <br /><span className="blodcontent1">
+                Smoke Ventilation Systems:       </span>Our expertise extends to the design
+                and installation of smoke extraction and management systems,
+                enhancing safety and compliance in commercial and residential
+                settings.
                 <br />
-                <span className="blodcontent1">Efficiency: </span> We optimize
-                electrical systems to run efficiently, reducing energy
-                consumption and lowering utility bills for our clients.
+                <br /><span className="blodcontent1">
+                Kitchen and Car Park Ventilation:       </span>We provide tailored
+                ventilation solutions for kitchens and car parks, optimizing air
+                quality and circulation to create safe, comfortable
+                environments.
                 <br />
+                <br /><span className="blodcontent1">
+                Design and Engineering Services:       </span>Our team offers comprehensive
+                design and engineering support, including heat load calculation,
+                ductwork design, and equipment selection, ensuring seamless
+                integration and optimal system performance.
                 <br />
-                <span className="blodcontent1">Cost Savings: </span>Through
-                regular maintenance and proactive troubleshooting, we help
-                identify and fix potential issues before they escalate, saving
-                money in the long run.
-                <br />
-                <br />
-                <span className="blodcontent1">Compliance: </span> Our
-                experienced team ensures that all electrical work meets local
-                and national safety codes and regulations, providing peace of
-                mind to our clients.
-                <br />
-                <br />
-                <span className="blodcontent1">Increased Property Value: </span>
-                Well-installed and maintained electrical systems can enhance the
-                value of your property, making it more attractive to potential
-                buyers or tenants.
-                <br />
-                <br />
-                <span className="blodcontent1">Convenience: </span>Our advanced
-                electrical solutions ensure convenience for residents and
-                businesses, enhancing their overall experience.
-                <br />
-                <br />
-                <span className="blodcontent1">Reliability:</span>With accurate
-                installation and maintenance, we deliver reliable and consistent
-                performance, minimizing downtime and costly repairs.
-                <br />
-                <br />
-                Choose Creative Power Electromechanical Works L.L.C for all your
-                electrical contracting needs in Dubai. Our dedication to
-                quality, safety, and customer satisfaction sets us apart as the
-                premier choice for electrical services in the region. Let us
-                empower your projects with creative solutions and unmatched
-                expertise.{" "}
+                <br /><span className="blodcontent1">
+                Testing and Commissioning:       </span>We conduct thorough testing and
+                commissioning procedures to validate system integrity and
+                performance, ensuring compliance with industry standards and
+                regulations.
+                <br /><br />
+                At Creative Power Electromechanical Works L.L.C., we are committed to excellence in every aspect of our service delivery. Whether you require installation, maintenance, or repair services for your HVAC systems, you can trust us to deliver exceptional results with professionalism and integrity.
               </>
             }
             color="#6a7c92"
@@ -176,12 +176,11 @@ const HVAC = () => {
         </Grid>
       </Grid>
       <Parall
-        imges="https://www.electraqatar.com/uploads/media/Importance%20of%20Electrical%20Contractors%20in%20the%20Workplace649aa7eb32157.jpg"
+        imges="https://www.townsendtotalenergy.com/wp-content/uploads/2019/06/hvac-contractor-4.jpg"
         txt={
           <>
-            For superior electrical contracting solutions,
-            <br />
-            click here to contact us now!
+           
+           Contact us today to learn more about our services.<br/>We can enhance the comfort, efficiency, and safety of your space.
           </>
         }
       />
@@ -192,9 +191,15 @@ const HVAC = () => {
 export default HVAC;
 const Imageset = [
   {
-    img: "https://www.rmjeconstruction.com/wp-content/uploads/2019/09/electrical-contractor-philippines-1024x681.jpg",
+    img: "https://www.blueridge.edu/wp-content/uploads/2019/12/ftr-HVAC-GI1151366143.jpg",
   },
   {
-    img: "https://www.maxpwrdubai.com/wp-content/uploads/2022/10/1-555x400.jpeg",
+    img: "https://www.afrdynamics.com/wp-content/uploads/2019/05/hvac-contractors.jpg",
+  },
+  {
+    img: "https://www.maxpwrdubai.com/wp-content/uploads/2022/10/heating-ventilation-air-conditioning-systems-227465-600x400.jpeg",
+  },
+  {
+    img: "http://mydecorative.com/wp-content/uploads/2018/05/HVAC-Contractor.jpg",
   },
 ];

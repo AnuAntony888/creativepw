@@ -12,6 +12,7 @@ import Saftey from "../About/Saftey";
 import Electrical from "../Service/Electrical";
 import Plumbing from "../Service/Plumbing";
 import HVAC from "../Service/HVAC";
+import Fire from "../Service/Fire";
 
 const Navigate = () => {
   return (
@@ -29,7 +30,8 @@ const Navigate = () => {
         <Route path="/safetymanagement" element={<Saftey />}></Route>
         <Route path="/electricalcontracting" element={<Electrical />}></Route>
         <Route path="/plumbingcontracting" element={<Plumbing />}></Route>
-        <Route path="/HVACcontracting" element={<HVAC/>}></Route>
+        <Route path="/HVACcontracting" element={<HVAC />}></Route>
+        <Route path="/firecontracting" element={<Fire/>}></Route>
       </Routes>
 
       <div>
