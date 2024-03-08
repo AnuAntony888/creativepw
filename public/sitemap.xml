@@ -2,94 +2,107 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://creativepw.com/</loc>
-        <lastmod>2024-03-08</lastmod>
+    <lastmod>2024-03-08T12:00:00+00:00</lastmod>
+
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <title>Home | Creative Power Electromechanical</title>
     </url>
     <url>
         <loc>https://creativepw.com/about</loc>
-        <lastmod>2024-03-08</lastmod>
-        <changefreq>monthly</changefreq>
+   <lastmod>2024-03-08T12:00:00+00:00</lastmod>
+
+      <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         <title>About Us | Creative Power Electromechanical</title>
     </url>
     
     <url>
         <loc>https://creativepw.com/services</loc>
-        <lastmod>2024-03-08</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+      <lastmod>2024-03-08T12:00:00+00:00</lastmod>
+
+         <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
         <title>Services | Creative Power Electromechanical</title>
     </url>
     <url>
         <loc>https://creativepw.com/projects</loc>
-        <lastmod>2024-03-08</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+<lastmod>2024-03-08T12:00:00+00:00</lastmod>
+
+     <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
         <title>Projects | Creative Power Electromechanical</title>
     </url>
     <url>
         <loc>https://creativepw.com/contactus</loc>
-        <lastmod>2024-03-08</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+     <lastmod>2024-03-08T12:00:00+00:00</lastmod>
+
+       <changefreq>weekly</changefreq>
+         <priority>1.0</priority>
         <title>Contact | Creative Power Electromechanical</title>
     </url>
     <url>
         <loc>https://creativepw.com/missionvission</loc>
-        <lastmod>2024-03-08</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+      <lastmod>2024-03-08T12:00:00+00:00</lastmod>
+
+          <changefreq>weekly</changefreq>
+          <priority>1.0</priority>
         <title>Mission and Vision | Creative Power Electromechanical</title>
     </url>
     <url>
         <loc>https://creativepw.com/ourstrength</loc>
-        <lastmod>2024-03-08</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+   <lastmod>2024-03-08T12:00:00+00:00</lastmod>
+
+        <changefreq>weekly</changefreq>
+          <priority>1.0</priority>
         <title>Our Strength | Creative Power Electromechanical</title>
     </url>
     <url>
         <loc>https://creativepw.com/qualtyassurance</loc>
-        <lastmod>2024-03-08</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+<lastmod>2024-03-08T12:00:00+00:00</lastmod>
+
+        <changefreq>weekly</changefreq>
+   <priority>1.0</priority>
         <title>Quality Assurance | Creative Power Electromechanical</title>
     </url>
     <url>
         <loc>https://creativepw.com/safetymanagement</loc>
-        <lastmod>2024-03-08</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+   <lastmod>2024-03-08T12:00:00+00:00</lastmod>
+
+        <changefreq>weekly</changefreq>
+       <priority>1.0</priority>
         <title>Safety Management | Creative Power Electromechanical</title>
     </url>
     <url>
         <loc>https://creativepw.com/electricalcontracting</loc>
-        <lastmod>2024-03-08</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+     <lastmod>2024-03-08T12:00:00+00:00</lastmod>
+
+      <changefreq>weekly</changefreq>
+   <priority>1.0</priority>
         <title>Electrical Contracting | Creative Power Electromechanical</title>
     </url>
     <url>
         <loc>https://creativepw.com/firecontracting</loc>
-        <lastmod>2024-03-08</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+   <lastmod>2024-03-08T12:00:00+00:00</lastmod>
+
+       <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
         <title>Fire Safety Services | Creative Power Electromechanical</title>
     </url>
     <url>
         <loc>https://creativepw.com/plumbingcontracting</loc>
-        <lastmod>2024-03-08</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+      <lastmod>2024-03-08T12:00:00+00:00</lastmod>
+
+      <changefreq>weekly</changefreq>
+   <priority>1.0</priority>
         <title>Plumbing Contracting | Creative Power Electromechanical</title>
     </url>
     <url>
         <loc>https://creativepw.com/HVACcontracting</loc>
-        <lastmod>2024-03-08</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+<lastmod>2024-03-08T12:00:00+00:00</lastmod>
+
+         <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
         <title>HVAC and Air Conditioning Contracting | Creative Power Electromechanical</title>
     </url>
     </urlset>
