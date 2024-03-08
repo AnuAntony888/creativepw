@@ -17,7 +17,7 @@
   margin: 0;
 } */
 
-
+.MuiTypography-root {font-family: "Lora", serif !important;}
 a {
   color: inherit;
   text-decoration: none;

@@ -11,7 +11,7 @@
 // export default Mission
 
 import React, { useEffect } from "react";
-import { Banner1, TypographyText } from "../ReusableComponent/Reusab";
+import { Banner1, MetaComponent, TypographyText } from "../ReusableComponent/Reusab";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { Grid } from "@mui/material";
@@ -27,6 +27,9 @@ const Mission = () => {
   const sizes = isSmallScreen ? (isSmallScreen1 ? "20px" : "24px") : "30px";
   return (
     <div>
+          <MetaComponent dynamicTitle='Our Mission and Vision | Creative Power EMC - MEP Contractor Dubai'
+        dynamicKeywords='Our Mission and Vision, Creative Power EMC mission, Vision of Creative Power EMC, MEP solutions Dubai, Leading MEP contractor vision, Electromechanical contractor mission, Innovative MEP solutions, Superior service Dubai, MEP contractor goals, Client satisfaction vision, MEP excellence vision.'
+        dynamicDescription='At Creative Power EMC, our mission is to deliver exceptional MEP solutions in Dubai and beyond. Our vision drives us to be the leading electromechanical contractor, exceeding client expectations with innovative solutions and superior service'/>
       <Banner1 image="https://base.ac.in/wp-content/uploads/2018/10/vision-mission-banner-e1539427773777.png" />
       <Grid
         container

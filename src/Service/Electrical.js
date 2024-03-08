@@ -11,7 +11,7 @@
 // export default Electrical
 
 import React, { useEffect } from "react";
-import { Banner1, Parall, TypographyText } from "../ReusableComponent/Reusab";
+import { Banner1, MetaComponent, Parall, TypographyText } from "../ReusableComponent/Reusab";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { Grid } from "@mui/material";
@@ -27,6 +27,11 @@ const Electrical = () => {
   const sizes = isSmallScreen ? (isSmallScreen1 ? "20px" : "24px") : "30px";
   return (
     <div>
+         <MetaComponent
+        dynamicTitle="Electrical Contracting | Creative Power EMC - MEP Contractor Dubai"
+        dynamicKeywords="Creative Power EMC electrical contracting, MEP contractor Dubai, Electrical solutions UAE, Electrical installations, Electrical maintenance, Electrical solutions provider, Dubai electromechanical contractor, MEP excellence, Electrical systems, Electrical engineering."
+        dynamicDescription="Explore our Electrical Contracting services at Creative Power EMC, the premier MEP contractor in Dubai. Our expertise in electrical installations, maintenance, and solutions ensures reliability and efficiency for diverse projects across the UAE."
+      />
       <Banner1 image="https://www.bs3services.co.uk/wp-content/uploads/Electrical-Working-Banner.jpg" />
       <Grid
         container

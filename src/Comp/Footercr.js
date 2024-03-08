@@ -15,7 +15,11 @@ import EmailIcon from "@mui/icons-material/Email";
 import LanguageIcon from "@mui/icons-material/Language";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import SmartphoneIcon from '@mui/icons-material/Smartphone';
+import useMediaQuery from "@mui/material/useMediaQuery";
+import { useTheme } from "@mui/material/styles";
 const Footercr = () => {
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.down("md"));
   return (
     <div>
       {/* <hr/> */}
@@ -34,7 +38,7 @@ const Footercr = () => {
         }}
       >
         <Grid item lg={2.5} md={3} sm={6} xs={12} sx={{ margin: "auto" }}>
-          <img src={Log} alt="" width={"100%"} />
+          <img src={Log} alt="" width={matches?"80%":"100%"} />
         </Grid>
 
         {Menu.map((data, index) => (
@@ -133,20 +137,20 @@ const Menu = [
     text: "Quick Links",
     data: [
       { label: "Home", link: "/" },
-      { label: "About Us ", link: "/aboutus" },
-      { label: "Services", link: "/services" },
-      { label: "News", link: "/news" },
+      { label: "About Us ", link: "/introduction" },
+      { label: "Services", link: "/MEPcontracting" },
+     
       { label: "Contact Us", link: "/contactus" },
     ],
   },
   {
     text: "Our Services",
     data: [
-      { label: "Electrical Contracting", link: "/" },
-      { label: "Plumbing Contracting ", link: "/aboutus" },
-      { label: "HVAC Contracting", link: "/services" },
-      { label: "Fire Contracting", link: "/news" },
-      { label: "MEP Contracting", link: "/contactus" },
+      { label: "Electrical Contracting", link: "/electricalcontracting" },
+      { label: "Plumbing Contracting ", link: "/plumbingcontracting" },
+      { label: "HVAC Contracting", link: "/HVACcontracting" },
+      { label: "Fire Contracting", link: "/firecontracting" },
+      { label: "MEP Contracting", link: "/MEPcontracting" },
     ],
   },
 ];
@@ -179,16 +183,7 @@ const Menu1 = [
         icon: <LanguageIcon sx={{ color: "      #6a7c92" }} />,
       },
 
-      {
-        label: (
-          <>
-            address,
-            <br />
-          </>
-        ),
-        link: "/",
-        icon: <LocationOnIcon sx={{ color: "      #6a7c92" }} />,
-      },
+  
     ],
   },
 ];

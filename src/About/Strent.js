@@ -1,5 +1,9 @@
 import React, { useEffect } from "react";
-import { Banner1, TypographyText } from "../ReusableComponent/Reusab";
+import {
+  Banner1,
+  MetaComponent,
+  TypographyText,
+} from "../ReusableComponent/Reusab";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { Grid } from "@mui/material";
@@ -15,6 +19,11 @@ const Strent = () => {
   const sizes = isSmallScreen ? (isSmallScreen1 ? "20px" : "24px") : "30px";
   return (
     <div>
+      <MetaComponent
+        dynamicTitle="Our Strength | Creative Power EMC - MEP Contractor Dubai"
+        dynamicKeywords="Creative Power EMC strength, MEP contractor Dubai, Electromechanical solutions UAE, Experienced MEP contractor, Innovative MEP solutions, Superior project management, Skilled engineers, Cutting-edge technology, Quality craftsmanship, MEP excellence, Dubai electromechanical contractor."
+        dynamicDescription="Discover the strengths of Creative Power EMC, the premier MEP contractor in Dubai. Our expertise, experience, and commitment to excellence set us apart in delivering top-quality electromechanical solutions for diverse projects."
+      />
       <Banner1 image="https://media.istockphoto.com/id/625736338/photo/stack-of-hands-showing-unity.jpg?s=612x612&w=0&k=20&c=20mAQjGRQ5XVKqHe2qFguqGZ4dwto6lxxinciCfnVI0=" />
       <Grid
         container

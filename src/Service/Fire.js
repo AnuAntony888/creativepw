@@ -11,7 +11,7 @@
 // export default Fire
 
 import React, { useEffect } from "react";
-import { Banner1, Parall, TypographyText } from "../ReusableComponent/Reusab";
+import { Banner1, MetaComponent, Parall, TypographyText } from "../ReusableComponent/Reusab";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { Grid } from "@mui/material";
@@ -26,6 +26,12 @@ const Fire = () => {
   const sizes = isSmallScreen ? (isSmallScreen1 ? "20px" : "24px") : "30px";
   return (
     <div>
+               <MetaComponent
+        dynamicTitle="Fire Safety Services | Creative Power EMC - MEP Contractor Dubai"
+        dynamicKeywords="Creative Power EMC fire safety services, MEP contractor Dubai, Fire safety solutions UAE, Fire prevention, Fire detection systems, Fire suppression systems, Fire safety inspections, Dubai electromechanical contractor, Fire safety standards, Fire safety regulations."
+        dynamicDescription="Discover our comprehensive Fire Safety Services at Creative Power EMC, the leading MEP contractor in Dubai. Our expert team ensures the implementation of state-of-the-art fire safety solutions for maximum protection and peace of mind."
+       
+      />
       <Banner1 image="https://summitfire.com/wp-content/uploads/2020/04/fire-protection-engineer1_S.jpg" />
       <Grid
         container

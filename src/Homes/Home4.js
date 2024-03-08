@@ -178,7 +178,7 @@ const Home4 = () => {
 };
 
 export default Home4;
-const Data = [
+export const Data = [
   {
     txt: "B+G+6+R Building at AL QUSAIS 2nd PLOT NO: 233-123, Dubai. Scope – MEP Works (Under Main contractor: Majal Contracting LLC).",
   },

@@ -14,16 +14,20 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
-import { dropdown, navItems } from "./Header";
+import { dropdown, men2, navItems } from "./Header";
 import { Link, useLocation } from "react-router-dom";
 const ResponsiveHeader = () => {
   const location = useLocation();
   const [openDrawer, setopenDrawer] = useState(false);
   const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const [selectedIndex, setSelectedIndex] = useState(null);
   const open = Boolean(anchorEl);
-  const handleClick = (event) => {
+  const handleClick = (event, index) => {
     setAnchorEl(event.currentTarget);
+    setSelectedIndex(index);
   };
+
   const handleClose = () => {
     setAnchorEl(null);
     setopenDrawer(false);
@@ -34,7 +38,7 @@ const ResponsiveHeader = () => {
         onClick={() => setopenDrawer(!openDrawer)}
         sx={{ float: "right" }}
       >
-        <MenuIcon sx={{ color: "white", float: "right" }} />
+        <MenuIcon sx={{ color: "#BD0F65", float: "right" }} />
       </IconButton>
 
       <Drawer
@@ -50,23 +54,71 @@ const ResponsiveHeader = () => {
             sx={{ float: "right", marginRight: "10px" }}
           ></CloseIcon>
           <ListItem disablePadding>
-            <ListItemButton sx={{ textAlign: "left", color: "#2C08D9" }}>
+            <ListItemButton
+              sx={{
+                color: "black",
+                fontFamily: "Lora",
+                fontSize: "1rem",
+                textTransform: "capitalize",
+                minWidth: "120px",
+                justifyContent: "flex-start",
+              }}
+            >
               <ListItemText>
                 {" "}
                 <Link to="/">Home</Link>
               </ListItemText>
             </ListItemButton>
           </ListItem>
-  
 
-          {navItems.map((item) => (
-            <ListItem key={item} disablePadding>
-              <ListItemButton sx={{ textAlign: "left", color: "#2C08D9" }}>
-                <ListItemText
-                  primary={item}
-                  onClick={() => setopenDrawer(false)}
-                />
-              </ListItemButton>
+          {dropdown.map((category, index) => (
+            <ListItem disablePadding key={index}>
+              <Button
+                onClick={(event) => handleClick(event, index)}
+                sx={{
+                  color: "black",
+                  fontFamily: "Lora",
+                  fontSize: "1rem",
+                  textTransform: "capitalize",
+                  minWidth: "120px",
+                  justifyContent: "flex-start",
+                }}
+                disableRipple
+              >
+                {category.text} &nbsp;&nbsp; <ArrowDropDownIcon />
+              </Button>
+              <Menu
+                anchorEl={anchorEl}
+                open={Boolean(anchorEl) && selectedIndex === index}
+                onClose={handleClose}
+              >
+                {category.category.map((item, innerIndex) => (
+                  <MenuItem key={innerIndex} onClick={handleClose} sx={{}}>
+                    <Link to={item.label} style={{ fontFamily: "Lora" }}>
+                      {item.content}
+                    </Link>
+                  </MenuItem>
+                ))}
+              </Menu>
+            </ListItem>
+          ))}
+
+          {men2.map((data, index) => (
+            <ListItem disablePadding key={index}>
+              <Button
+                disableRipple
+                sx={{
+                  color: "black",
+                  fontFamily: "Lora",
+                  fontSize: "1rem",
+                  textTransform: "capitalize",
+                  minWidth: "120px",
+                  justifyContent: "flex-start",
+                }}
+                className="buttton_eader"
+              >
+                <Link to={data.label}>{data.text}</Link>
+              </Button>
             </ListItem>
           ))}
         </List>

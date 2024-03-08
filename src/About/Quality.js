@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Banner1, TypographyText } from "../ReusableComponent/Reusab";
+import { Banner1, MetaComponent, TypographyText } from "../ReusableComponent/Reusab";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { Grid } from "@mui/material";
@@ -15,6 +15,11 @@ const Quality = () => {
   const sizes = isSmallScreen ? (isSmallScreen1 ? "20px" : "24px") : "30px";
   return (
     <div>
+         <MetaComponent
+        dynamicTitle="Quality Assurance | Creative Power EMC - MEP Contractor Dubai"
+        dynamicKeywords="Creative Power EMC quality assurance, MEP contractor Dubai, Electromechanical solutions UAE, Quality control measures, MEP project quality, Superior craftsmanship, Quality assurance protocols, Dubai electromechanical contractor, MEP excellence, Quality assurance standards."
+        dynamicDescription="At Creative Power EMC, we prioritize quality assurance to ensure excellence in every project. Learn about our stringent quality control measures and commitment to delivering superior MEP solutions in Dubai and beyond."
+      />
       <Banner1 image="https://pairee.com/wp-content/uploads/2020/05/shutterstock_1155561991-scaled.jpg" />
       <Grid
         container

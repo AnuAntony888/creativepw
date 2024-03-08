@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Banner1, Parall, TypographyText } from "../ReusableComponent/Reusab";
+import { Banner1, MetaComponent, Parall, TypographyText } from "../ReusableComponent/Reusab";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { Grid } from "@mui/material";
@@ -14,6 +14,12 @@ const HVAC = () => {
   const sizes = isSmallScreen ? (isSmallScreen1 ? "20px" : "24px") : "30px";
   return (
     <div>
+       <MetaComponent
+        dynamicTitle="HVAC & Air Conditioning Contracting | Creative Power EMC - MEP Contractor Dubai"
+        dynamicKeywords="Creative Power EMC HVAC & air conditioning contracting, MEP contractor Dubai, HVAC solutions UAE, Air conditioning installations, HVAC maintenance, HVAC solutions provider, Dubai electromechanical contractor, MEP excellence, HVAC systems, Air conditioning engineering.."
+        dynamicDescription="Explore our HVAC & Air Conditioning Contracting services at Creative Power EMC, the leading MEP contractor in Dubai. Our expert team specializes in HVAC installations, maintenance, and solutions, ensuring optimal comfort and efficiency for diverse projects across the UAE."
+       
+      />
       <Banner1 image="http://www.completeheatingandairutah.com/wp-content/uploads/2015/06/Air-Conditioning-Contractor.jpg" />
       <Grid
         container

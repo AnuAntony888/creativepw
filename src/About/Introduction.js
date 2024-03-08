@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Banner1, TypographyText } from "../ReusableComponent/Reusab";
+import { Banner1, MetaComponent, TypographyText } from "../ReusableComponent/Reusab";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { Grid } from "@mui/material";
@@ -15,6 +15,9 @@ const Introduction = () => {
   const sizes = isSmallScreen ? (isSmallScreen1 ? "20px" : "24px") : "30px";
   return (
     <div>
+      <MetaComponent dynamicTitle='About Creative Power EMC | Premier MEP Contractor in Dubai'
+        dynamicKeywords='About Creative Power EMC, MEP contractor Dubai, Electromechanical solutions UAE, Leading MEP contractor, Dubai MEP contractor, Creative Power EMC history, MEP contractor experience, Prestigious MEP projects, Royal palaces MEP contractor, Government contracts MEP, Dubai electromechanical contractor'
+        dynamicDescription='Learn about Creative Power Electromechanical Works L.L.C, a leading MEP contractor in Dubai, UAE. With over 40 years of experience, we specialize in providing top-quality electromechanical solutions for prestigious projects, including royal palaces, government contracts, hotels, and more.'/>
       <Banner1 image="https://www.brmep.com/images/bg-2.jpg" />
       <Grid
         container

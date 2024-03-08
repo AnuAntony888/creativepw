@@ -13,6 +13,10 @@ import Electrical from "../Service/Electrical";
 import Plumbing from "../Service/Plumbing";
 import HVAC from "../Service/HVAC";
 import Fire from "../Service/Fire";
+import MEP from "../Service/MEP";
+import Project from "../Project/Project";
+import Contact from "../Contact/Contact";
+import Freequate from "../FAQ/Freequate";
 
 const Navigate = () => {
   return (
@@ -31,7 +35,11 @@ const Navigate = () => {
         <Route path="/electricalcontracting" element={<Electrical />}></Route>
         <Route path="/plumbingcontracting" element={<Plumbing />}></Route>
         <Route path="/HVACcontracting" element={<HVAC />}></Route>
-        <Route path="/firecontracting" element={<Fire/>}></Route>
+        <Route path="/firecontracting" element={<Fire />}></Route>
+        <Route path="/MEPcontracting" element={<MEP />}></Route>
+        <Route path="/project" element={<Project />}></Route>
+        <Route path="/contactus" element={<Contact />}></Route>
+        <Route path="/career" element={<Freequate />}></Route>
       </Routes>
 
       <div>

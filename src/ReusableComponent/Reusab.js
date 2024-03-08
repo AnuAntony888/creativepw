@@ -1,5 +1,5 @@
 import React from "react";
-
+import {Helmet} from "react-helmet";
 import Card from "@mui/material/Card";
 import SettingsIcon from "@mui/icons-material/Settings";
 import CardContent from "@mui/material/CardContent";
@@ -10,6 +10,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { Box, CardActions, CardMedia, Grid, Typography } from "@mui/material";
 import { Parallax } from "react-parallax";
 import { Link } from "react-router-dom";
+
 export function TypographyText(props) {
   return (
     <Typography
@@ -384,82 +385,123 @@ export function ImageIcon(props) {
   );
 }
 
-
-
 export function Parall(props) {
   // Use React hooks inside a React function component
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
-      <div>
-          <Parallax
-              bgImage={props.imges}
-              strength={300}
-              style={{
-                  backgroundSize: "cover",
-                  objectFit: "cover",
-                  height: "70vh",
-                  display: "flex",
-                  alignItems: "center",
-                  width: "100%",
-                  backgroundRepeat: "no-repeat",
-                  backgroundPosition: "bottom",
-              }}
-          >
-              <Grid
-                  container
-                  spacing={0}
-                  className="large-header"
-                  sx={{
-                      height: "70vh",
-                  }}
-              >
-                  <Box
-                      sx={{
-                          position: "absolute",
-                          top: 0,
-                          right: 0,
-                          bottom: 0,
-                          width: "100%",
-                          left: 0,
-                          backgroundColor: "rgba(0,0,0,.7)",
-                      }}
-                  ></Box>
+    <div>
+      <Parallax
+        bgImage={props.imges}
+        strength={300}
+        style={{
+          backgroundSize: "cover",
+          objectFit: "cover",
+          height: "70vh",
+          display: "flex",
+          alignItems: "center",
+          width: "100%",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "bottom",
+        }}
+      >
+        <Grid
+          container
+          spacing={0}
+          className="large-header"
+          sx={{
+            height: "70vh",
+          }}
+        >
+          <Box
+            sx={{
+              position: "absolute",
+              top: 0,
+              right: 0,
+              bottom: 0,
+              width: "100%",
+              left: 0,
+              backgroundColor: "rgba(0,0,0,.7)",
+            }}
+          ></Box>
 
-                  <Grid
-                      container
-                      Spacing={3}
-                      sx={{
-                          zIndex: 1,
-                      }}
-                  >
-                      <Grid item xs={12} sx={{ margin: "auto", p: "2%" }}>
-                          <div data-aos="fade-right">
-                              <Typography
-                                  variant="h5"
-                                  color="textPrimary"
-                                  fontWeight="600"
+          <Grid
+            container
+            Spacing={3}
+            sx={{
+              zIndex: 1,
+            }}
+          >
+            <Grid item xs={12} sx={{ margin: "auto", p: "2%" }}>
+              <div data-aos="fade-right">
+                <Typography
+                  variant="h5"
+                  color="textPrimary"
+                  fontWeight="600"
                   textAlign="center"
-                  color='white'
-                                  fontSize={isSmallScreen ? "1.25rem" : "1.3rem"}
-                              >
-                                { props.txt}
-                              </Typography>
-                              <br />
-                              <Buttons
-                                  className="button1"
-                                  Buttonname={
-                                      <Link to="/contactus">Contact Us</Link>
-                                  }
-                                  bgcolor="#BD0F65"
-                                  bgcolor1="#BD0F65"
-                              />
-                          </div>
-                      </Grid>
-                  </Grid>
-              </Grid>
-          </Parallax>
-      </div>
+                  color="white"
+                  fontSize={isSmallScreen ? "1.25rem" : "1.3rem"}
+                >
+                  {props.txt}
+                </Typography>
+                <br />
+                <Buttons
+                  className="button1"
+                  Buttonname={<Link to="/contactus">Contact Us</Link>}
+                  bgcolor="#BD0F65"
+                  bgcolor1="#BD0F65"
+                />
+              </div>
+            </Grid>
+          </Grid>
+        </Grid>
+      </Parallax>
+    </div>
   );
 }
+
+export const MetaComponent = ({
+  dynamicTitle,
+  dynamicKeywords,
+  dynamicDescription,
+  dynamicindex,
+}) => {
+  return (
+    <>
+      <Helmet>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+          {dynamicTitle
+            ? dynamicTitle
+            : "Leading MEP Contractor in Dubai | Creative Power EMC"}
+        </title>
+        <meta
+          name="title"
+          content={
+            dynamicTitle
+              ? dynamicTitle
+              : "Leading MEP Contractor in Dubai | Creative Power EMC"
+          }
+        />
+        <meta
+          name="keywords"
+          content={
+            dynamicKeywords
+              ? dynamicKeywords
+              : "MEP contractor Dubai ,Electromechanical solutions UAE,MEP works Dubai,Royal palaces MEP,Government contracts MEP,Five-star hotels MEP , Commercial complexes MEP,Residential complexes MEP , Recreational developments MEP , Creative Power EMC"
+          }
+        />
+        <meta
+          name="description"
+          content={
+            dynamicDescription
+              ? dynamicDescription
+              : 'Creative Power EMC is a premier MEP contractor in Dubai, UAE, offering top-quality electromechanical solutions. With over 40 years of experience, we specialize in MEP works for royal palaces, government contracts, hotels, and more.'
+          }
+        />
+       
+      </Helmet>
+    </>
+  );
+};

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Banner1, Parall, TypographyText } from "../ReusableComponent/Reusab";
+import { Banner1, MetaComponent, Parall, TypographyText } from "../ReusableComponent/Reusab";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { Grid } from "@mui/material";
@@ -15,6 +15,12 @@ const Plumbing = () => {
   const sizes = isSmallScreen ? (isSmallScreen1 ? "20px" : "24px") : "30px";
   return (
     <div>
+                     <MetaComponent
+        dynamicTitle="Plumbing Contracting | Creative Power EMC - MEP Contractor Dubai"
+        dynamicDescription="Explore our Plumbing Contracting services at Creative Power EMC, the leading MEP contractor in Dubai. Our skilled team specializes in plumbing installations, maintenance, and solutions, ensuring efficiency and reliability for diverse projects across the UAE."
+        dynamicKeywords="Creative Power EMC plumbing contracting, MEP contractor Dubai, Plumbing solutions UAE, Plumbing installations, Plumbing maintenance, Plumbing solutions provider, Dubai electromechanical contractor, MEP excellence, Plumbing systems, Plumbing engineering."
+       
+      />
       <Banner1 image="https://www.licensesetc.com/wp-content/uploads/2020/05/bigstock-Plumber-Tools-And-Equipment-On-305185702-1110x550.jpg
     " />
       <Grid
