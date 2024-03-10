@@ -172,7 +172,7 @@ function Homecontent() {
 
         <Grid item lg={5} md={4} xs={12} sm={12} sx={{ margin: "auto" }}>
           <img
-            src="https://damiaglobalservices.com/wp-content/uploads/2022/03/hgvgv-1-600x600.jpg"
+            src="https://ik.imagekit.io/jlco9jzsq/creativepower/hgvgv-1-600x600.webp?updatedAt=1710091115995"
             alt=""
             style={{ width: "100%", height: "auto" }}
           />
@@ -185,7 +185,7 @@ function Homecontent() {
 export default Homecontent;
 const Data = [
   {
-    img: "https://www.dubaiwebsitecompany.com/demo/mep/wp-content/uploads/2022/01/S1.jpg",
+    img: "https://ik.imagekit.io/jlco9jzsq/creativepower/S1.jpg?updatedAt=1710091116259",
 
     Txt: (
       <>
@@ -196,7 +196,7 @@ const Data = [
     Txt1: "Leading MEP Company In UAE",
   },
   {
-    img: "https://www.dubaiwebsitecompany.com/demo/mep/wp-content/uploads/2022/01/s2.jpg",
+    img: "https://ik.imagekit.io/jlco9jzsq/creativepower/s2.jpg?updatedAt=1710091116337",
     Txt: (
       <>
         Creative Power Electro Mechanical L.L.C:
@@ -205,7 +205,7 @@ const Data = [
     ),
   },
   {
-    img: "https://www.dubaiwebsitecompany.com/demo/mep/wp-content/uploads/2022/01/s3.jpg",
+    img: "https://ik.imagekit.io/jlco9jzsq/creativepower/s3.jpg?updatedAt=1710091116295",
     Txt: (
       <>
         Promoting Sustainable Building Solutions.
@@ -215,7 +215,7 @@ const Data = [
     ),
   },
   {
-    img: "https://www.dubaiwebsitecompany.com/demo/mep/wp-content/uploads/2022/01/s4.jpg",
+    img: "https://ik.imagekit.io/jlco9jzsq/creativepower/s4.jpg?updatedAt=1710091116364",
     Txt: (
       <>
         Where Engineering Excellence Meets.

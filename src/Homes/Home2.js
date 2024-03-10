@@ -258,23 +258,23 @@ export default Home2;
 
 const Service = [
   {
-    img: "https://content.mykukun.com/wp-content/uploads/2021/05/19090128/electrical-contractor.jpg",
+    img: "https://ik.imagekit.io/jlco9jzsq/creativepower/electrical-contractor.jpg?updatedAt=1710091116057",
     txt: "Electrical Contracting",
   },
   {
-    img: "https://handymanomaha.org/wp-content/uploads/2020/12/plumbing-contractor-3-1024x684.jpeg",
+    img: "https://ik.imagekit.io/jlco9jzsq/creativepower/plumbing-contractor-3-1024x684.jpeg?updatedAt=1710091115992",
     txt: "Plumbing Contracting",
   },
   {
-    img: "https://petersheatingandcoolingllc.com/wp-content/uploads/2020/05/Residential-HVAC-Contractor-768x513.jpg",
+    img: "https://ik.imagekit.io/jlco9jzsq/creativepower/Residential-HVAC-Contractor-768x513.jpg?updatedAt=1710091115595",
     txt: "HVAC Contracting",
   },
   {
-    img: "https://www.relifire.com/images/products/fire-contractor.jpg",
+    img: "https://ik.imagekit.io/jlco9jzsq/creativepower/fire-contractor.jpg?updatedAt=1710091115545",
     txt: "Fire  Contracting",
   },
   {
-    img: "https://static.wixstatic.com/media/683fc5_a40f6b35a84a4eb8ac7d75ea2bc6a246~mv2.gif",
+    img: "https://ik.imagekit.io/jlco9jzsq/creativepower/683fc5_a40f6b35a84a4eb8ac7d75ea2bc6a246~mv2.gif?updatedAt=1710091116661",
     txt: "MEP Contracting",
   },
 ];

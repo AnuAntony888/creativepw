@@ -16,7 +16,7 @@ const Freequate = () => {
  
   return (
     <div>
-     <Banner1 image="https://c0.wallpaperflare.com/preview/274/250/540/career-success-path-stair.jpg" /> 
+     <Banner1 image="https://ik.imagekit.io/jlco9jzsq/creativepower/career-success-path-stair.jpg?updatedAt=1710091807740" /> 
    
      <Grid
         container
@@ -56,7 +56,7 @@ const Freequate = () => {
         </Grid>
         <Grid item xs={12} lg={6} md={6} sm={12} >
         <img
-              src={'https://reaction4inclusion.com/wp-content/uploads/2020/07/colorful-we-re-hiring-join-our-team-message-vector.jpg'}
+              src={'https://ik.imagekit.io/jlco9jzsq/creativepower/colorful-we-re-hiring-join-our-team-message-vector.jpg?updatedAt=1710091807996'}
               alt=""
               width="100%"
               style={{

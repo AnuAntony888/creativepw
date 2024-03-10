@@ -20,7 +20,7 @@ const Home4 = () => {
   const sizes = isSmallScreen ? (isSmallScreen1 ? "20px" : "24px") : "30px";
   const Datas = [
     {
-      imges: "https://www.ny-engineers.com/hs-fs/hubfs/projects-banner-new.jpg",
+      imges: "https://ik.imagekit.io/jlco9jzsq/creativepower/projects-banner-new.jpg?updatedAt=1710091534497",
     },
   ];
   return (

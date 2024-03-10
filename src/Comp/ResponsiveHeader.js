@@ -55,6 +55,7 @@ const ResponsiveHeader = () => {
           ></CloseIcon>
           <ListItem disablePadding>
             <ListItemButton
+            
               sx={{
                 color: "black",
                 fontFamily: "Lora",
@@ -62,11 +63,14 @@ const ResponsiveHeader = () => {
                 textTransform: "capitalize",
                 minWidth: "120px",
                 justifyContent: "flex-start",
+                paddingLeft: '8px',
+                fontWeight:'500 !important'
               }}
+              onClick={() => setopenDrawer(false)}
             >
               <ListItemText>
                 {" "}
-                <Link to="/">Home</Link>
+                <Link to="/" >Home</Link>
               </ListItemText>
             </ListItemButton>
           </ListItem>
@@ -116,8 +120,9 @@ const ResponsiveHeader = () => {
                   justifyContent: "flex-start",
                 }}
                 className="buttton_eader"
+                onClick={() => setopenDrawer(false)}
               >
-                <Link to={data.label}>{data.text}</Link>
+                <Link to={data.label} >{data.text}</Link>
               </Button>
             </ListItem>
           ))}

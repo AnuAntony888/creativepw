@@ -69,7 +69,7 @@ const Contact = () => {
   };
   return (
     <div>
-       <Banner1 image="https://sqexpertise.com/wp-content/uploads/2022/02/Contact-Us.jpg" />
+       <Banner1 image="https://ik.imagekit.io/jlco9jzsq/creativepower/Contact-Us.jpg?updatedAt=1710091807964" />
       <Grid
         container
         spacing={5}
