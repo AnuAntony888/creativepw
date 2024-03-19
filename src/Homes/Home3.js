@@ -11,7 +11,7 @@ import pro3 from "../Assets/pro4.png";
 import pro4 from "../Assets/pro6.png";
 import pro5 from "../Assets/pro7.png";
 import LinkIcon from "@mui/icons-material/Link";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+
 
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 
