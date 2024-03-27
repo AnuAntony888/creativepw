@@ -39,10 +39,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_vpkwic4",
-        "template_nml3icd",
+        "service_aph1np8",
+        "template_qmaho76",
         form.current,
-        "9zScA-1V-BCm8E_Ck"
+        "zgsOqhXhVeUclWmFF"
       )
       .then(
         (result) => {

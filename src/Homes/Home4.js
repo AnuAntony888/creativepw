@@ -186,7 +186,7 @@ export const Data = [
     txt: "B+G+6+R Building at AL Warqa Plot No : 421-2091, Dubai. Scope – MEP Works (Building Name BAITHI-1 & 2 Under Main contractor: Majal Contracting). ",
   },
   {
-    txt: "B+G+6+R Building at Plot No:421-0353  Warqa 1st , Dubai. Scope of Work – MEP Works (Under Main contractor: Majal Contracting LLC).",
+    txt: "G+1 42NO Towne hose villa ,Dubai. Scope of Work – MEP Works (Under Main contractor: Majal Contracting LLC).",
   },
 
   {

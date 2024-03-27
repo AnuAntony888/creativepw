@@ -89,7 +89,7 @@ const Home3 = () => {
     { img: pro2, name: 'Khawaneej G+1 Villa -4 NOs MEP works '},
     { img: pro3 , name:'B+G+6+R Building at AL QUSAIS 2nd PLOT NO: 233-123, Dubai'},
     { img: pro4 , name:'42  nos  G+1  Town  House  Villa  Building  at  AL  Furjan,  Dubai. '},
-    { img: pro5 , name:'B+G+6+R Building at Plot No:421-0353  Warqa 1st , Dubai'},
+    { img: pro5 , name:'G+1 42NO Towne hose villa ,Dubai.'},
   ];
 
   const theme = useTheme();
